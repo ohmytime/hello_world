@@ -1,11 +1,13 @@
 
-//引脚连接：
-
-//屏幕 老王ST7789
+# 屏幕 老王ST7789
 1.3寸240240 IPS液晶屏模块 SPI接口 FT6236电容触摸 全新拆机屏 
 
-单片机：
+# 单片机：
 合宙 ESP32C3
+
+# IO接线
+
+```c++
 
 #define PIN_RES GPIO_NUM_10
 #define PIN_DC  GPIO_NUM_6
@@ -23,5 +25,5 @@
 #define PIN_NUM_SCL GPIO_NUM_5
 #define PIN_NUM_SDA GPIO_NUM_4
 
-#define PIN_TOUCH_NUM_RES   GPIO_NUM_8
+#define PIN_TOUCH_NUM_RST   GPIO_NUM_8
 #define PIN_TOUCH_NUM_INT   GPIO_NUM_9
